@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Путешествия</title>
+    <title>My Travel — Путешествуй с удовольствием</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <img src="images/logo.png" alt="logo" class="logo">
+            <img src="images/logo.png" alt="My Travel Logo" class="logo">
             <nav>
                 <a href="#">Главная</a>
-                <a href="#">О нас</a>
-                <a href="#">Услуги</a>
-                <a href="#">Каталог</a>
-                <a href="#">Блог</a>
-                <a href="#">Обратная связь</a>
-                <a href="#">Контакты</a>
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#blog">Блог</a>
+                <a href="#feedback">Обратная связь</a>
+                <a href="#contacts">Контакты</a>
             </nav>
         </div>
     </header>
+
     <main>
+        <!-- Главный экран -->
         <section id="cover">
             <div class="overlay"></div>
             <div class="container">
                 <div class="cover-content">
                     <h1>Путешествуй по миру — легко и с удовольствием!</h1>
-                    <p>Личный блог для любителей путешествий: лучшие направления, отели, советы, лайфхаки и вдохновение
-                        для ваших открытий по всему миру.</p>
-                    <button>Перейти в каталогу</button>
+                    <p>Личный блог для любителей путешествий: лучшие направления, отели, советы, лайфхаки и вдохновение для ваших открытий.</p>
+                    <a href="#catalog"><button class="primary-btn">Перейти в каталог</button></a>
                 </div>
             </div>
         </section>
 
+        <!-- Популярные направления -->
         <section id="popular">
             <div class="overlay"></div>
             <div class="container">
-                <h2>Популярные</h2>
+                <h2>Популярные направления</h2>
                 <div class="destinations">
                     <div class="destination-card">
                         <div class="destination-image">
@@ -52,19 +50,12 @@
                         <div class="destination-info">
                             <div class="destination-header">
                                 <h3>Турция</h3>
-                                <p class="price">₽90 000/2 дня</p>
+                                <p class="price">от ₽90 000 / 2 дня</p>
                             </div>
-                            <p class="description">Восточный колорит, пляжи Анталии, базары и вкуснейшие сладости.
-                                Отличный выбор для короткого отпуска.</p>
+                            <p class="description">Восточный колорит, пляжи Анталии, базары и вкуснейшие сладости. Отличный выбор для короткого отпуска.</p>
                             <div class="card-footer">
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.tez-tour.travel/turkey/tury/weekend-tours/nights_1/?ysclid=ma7678q4y3755382408" target="_blank">
+                                <div class="rating">★★★★★</div>
+                                <a href="https://www.tez-tour.travel/turkey/" target="_blank">
                                     <button class="details-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -77,21 +68,14 @@
                         </div>
                         <div class="destination-info">
                             <div class="destination-header">
-                                <h3>Юж. Корея</h3>
-                                <p class="price">₽35 000/2 дня</p>
+                                <h3>Южная Корея</h3>
+                                <p class="price">от ₽35 000 / 2 дня</p>
                             </div>
-                            <p class="description">Модерн и традиции: небоскрёбы Сеула, уличная еда, корейская культура
-                                и косметика.</p>
+                            <p class="description">Модерн и традиции: небоскрёбы Сеула, уличная еда, корейская культура и косметика.</p>
                             <div class="card-footer">
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.tripadvisor.ru/HotelsList-South_Korea-Cheap-Hotels-zfp7720919.html#SPLITVIEWMAP" target="_blank">
-                                    <button class="details-btn">Подронее</button>
+                                <div class="rating">★★★★★</div>
+                                <a href="https://www.tripadvisor.ru/HotelsList-South_Korea-Cheap-Hotels-zfp7720919.html" target="_blank">
+                                    <button class="details-btn">Подробнее</button>
                                 </a>
                             </div>
                         </div>
@@ -104,150 +88,129 @@
                         <div class="destination-info">
                             <div class="destination-header">
                                 <h3>Испания</h3>
-                                <p class="price">₽40 000/2 дня</p>
+                                <p class="price">от ₽40 000 / 2 дня</p>
                             </div>
-                            <p class="description">Солнце, сиеста и архитектура Гауди. Испания подарит энергию и яркие
-                                эмоции.</p>
+                            <p class="description">Солнце, сиеста и архитектура Гауди. Испания подарит энергию и яркие эмоции.</p>
                             <div class="card-footer">
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.onahotels.com/en/apart-hotel-hacienda-del-alamo/">
-                                    <button class="details-btn">подробнее</button>
+                                <div class="rating">★★★★★</div>
+                                <a href="https://www.onahotels.com/" target="_blank">
+                                    <button class="details-btn">Подробнее</button>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="catalog-btn-container">
-                    <button class="catalog-btn">Перейти в каталогу</button>
+                    <a href="#catalog"><button class="catalog-btn">Перейти в полный каталог</button></a>
                 </div>
             </div>
         </section>
 
+        <!-- О нас -->
         <section id="about">
             <div class="overlay"></div>
             <div class="container">
                 <div class="about-main">
                     <div class="about-image">
-                        <img src="Images/phuget.png" alt="Курорт">
+                        <img src="images/phuget.png" alt="Пхукет">
                     </div>
                     <div class="about-content">
                         <h2>О нас</h2>
-                        <p>Мы — команда путешественников и энтузиастов, которые обожают открывать новые уголки мира и
-                            делиться своими впечатлениями. Наш блог — это место, где реальные истории встречаются с
-                            полезной информацией</p>
+                        <p>Мы — команда путешественников и энтузиастов, которые обожают открывать новые уголки мира и делиться своими впечатлениями. Наш блог — это место, где реальные истории встречаются с полезной информацией.</p>
                     </div>
                 </div>
 
                 <div class="about-features">
                     <div class="feature">
                         <div class="feature-image">
-                            <img src="Images/japan.png" alt="Япония">
+                            <img src="images/japan.png" alt="Япония">
                         </div>
                         <div class="feature-content">
-                            <h3>Зачем?</h3>
-                            <p>Мы верим, что путешествия расширяют горизонты. Наша цель — вдохновить вас на поездки,
-                                помочь выбрать направление, подобрать отель и подготовиться к дороге без стресса</p>
+                            <h3>Зачем мы это делаем?</h3>
+                            <p>Мы верим, что путешествия расширяют горизонты. Наша цель — вдохновить вас на поездки, помочь выбрать направление, подобрать отель и подготовиться к дороге без стресса.</p>
                         </div>
                     </div>
 
                     <div class="feature">
                         <div class="feature-image">
-                            <img src="Images/switzerland.png" alt="Швейцария">
+                            <img src="images/switzerland.png" alt="Швейцария">
                         </div>
                         <div class="feature-content">
-                            <h3>Что вы найдёте</h3>
-                            <p>На сайте собраны обзоры стран и городов, рейтинги отелей, советы по организации
-                                путешествий, а также подборки книг и ресурсов для изучения языков</p>
+                            <h3>Что вы найдёте на сайте</h3>
+                            <p>Обзоры стран и городов, рейтинги отелей, советы по организации путешествий, а также подборки книг и ресурсов для изучения языков.</p>
                         </div>
                     </div>
 
                     <div class="feature">
                         <div class="feature-image">
-                            <img src="Images/nightmarket.png" alt="Ночной рынок">
+                            <img src="images/nightmarket.png" alt="Ночной рынок">
                         </div>
                         <div class="feature-content">
                             <h3>Мы с вами!</h3>
-                            <p>Наш блог — это не просто статьи. Это живое сообщество тех, кто любит путешествовать.
-                                Присоединяйтесь, делитесь отзывами и давайте вместе открывать мир!</p>
+                            <p>Наш блог — это не просто статьи. Это живое сообщество тех, кто любит путешествовать. Присоединяйтесь, делитесь отзывами и давайте вместе открывать мир!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Услуги -->
         <section id="services">
             <div class="overlay"></div>
             <div class="container">
-                <h2>Услуги</h2>
+                <h2>Наши услуги</h2>
                 <div class="services-container">
                     <div class="service-item">
                         <div class="service-icon">
-                            <img src="Images/icons8-around-the-globe-64 1.png" alt="Направления">
+                            <img src="images/icons8-around-the-globe-64 1.png" alt="Направления">
                         </div>
-                        <h3>Подбор интересных направлений для путешествий</h3>
-
+                        <h3>Подбор интересных направлений</h3>
                     </div>
-
                     <div class="service-item">
                         <div class="service-icon">
-                            <img src="Images/icons8-consultation-64 1.png" alt="Планирование">
+                            <img src="images/icons8-consultation-64 1.png" alt="Планирование">
                         </div>
                         <h3>Советы по планированию поездки</h3>
-
                     </div>
-
                     <div class="service-item">
                         <div class="service-icon">
-                            <img src="Images/icons8-booking-64 1.png" alt="Отели">
+                            <img src="images/icons8-booking-64 1.png" alt="Отели">
                         </div>
-                        <h3>Рейтинг и обзоры отелей с ценами</h3>
-
+                        <h3>Рейтинги и обзоры отелей</h3>
                     </div>
-
                     <div class="service-item">
                         <div class="service-icon">
-                            <img src="Images/icons8-5-star-hotel-64 1.png" alt="Отзывы">
+                            <img src="images/icons8-5-star-hotel-64 1.png" alt="Отзывы">
                         </div>
-                        <h3>Отзывы и личные блоги путешественников</h3>
-
+                        <h3>Отзывы и личные истории путешественников</h3>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Каталог -->
         <section id="catalog">
             <div class="container">
-                <h2 style="color: black;">Каталог</h2>
-                <h3 class="catalog-subtitle">Популярные</h3>
-                <p class="catalog-description">Здесь собраны самые популярные туристические направления, удобные отели и
-                    полезная информация для тех, кто хочет путешествовать с комфортом и без стресса.</p>
+                <h2>Каталог направлений</h2>
+                <h3 class="catalog-subtitle">Популярные страны</h3>
+                <p class="catalog-description">Здесь собраны самые популярные туристические направления, удобные отели и полезная информация для комфортного путешествия.</p>
 
                 <div class="catalog-row">
+                    <!-- Карточки Япония, Италия, Франция -->
                     <div class="catalog-card">
                         <div class="catalog-image">
-                            <img src="Images/Tokyo.png" alt="Япония">
+                            <img src="images/Tokyo.png" alt="Япония">
                         </div>
                         <div class="catalog-info">
                             <div class="catalog-header">
                                 <h3>Япония</h3>
-                                <p class="catalog-price">₽40 000/2 дня</p>
+                                <p class="catalog-price">от ₽40 000 / 2 дня</p>
                             </div>
-                            <p class="catalog-text">Традиции, технологии и эстетика. Прогулки по Токио, храмы Киото и
-                                сакура весной</p>
+                            <p class="catalog-text">Традиции, технологии и эстетика. Прогулки по Токио, храмы Киото и сакура весной.</p>
                             <div class="catalog-footer">
-                                <div class="catalog-rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.f8666281-68171238-c82da528-74722d776562/https/travel.usnews.com/Tokyo_Japan/Things_To_Do/2-day-itinerary/">
+                                <div class="catalog-rating">★★★★★</div>
+                                <a href="https://travel.usnews.com/Tokyo_Japan/" target="_blank">
                                     <button class="catalog-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -256,25 +219,17 @@
 
                     <div class="catalog-card">
                         <div class="catalog-image">
-                            <img src="Images/Italy.png" alt="Италия">
+                            <img src="images/Italy.png" alt="Италия">
                         </div>
                         <div class="catalog-info">
                             <div class="catalog-header">
                                 <h3>Италия</h3>
-                                <p class="catalog-price">₽45 000/2 дня</p>
+                                <p class="catalog-price">от ₽45 000 / 2 дня</p>
                             </div>
-                            <p class="catalog-text">Паста, пицца и музеи под открытым небом. Рим, Венеция, Флоренция —
-                                каждый город уникален</p>
+                            <p class="catalog-text">Паста, пицца и музеи под открытым небом. Рим, Венеция, Флоренция — каждый город уникален.</p>
                             <div class="catalog-footer">
-                                <div class="catalog-rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.booking.com/budget/country/it.ru.html?ysclid=ma9bdmpn6b971776015">
-
+                                <div class="catalog-rating">★★★★★</div>
+                                <a href="https://www.booking.com/country/it.ru.html" target="_blank">
                                     <button class="catalog-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -283,25 +238,17 @@
 
                     <div class="catalog-card">
                         <div class="catalog-image">
-                            <img src="Images/Paris.png" alt="Франция">
+                            <img src="images/Paris.png" alt="Франция">
                         </div>
                         <div class="catalog-info">
                             <div class="catalog-header">
                                 <h3>Франция</h3>
-                                <p class="catalog-price">₽50 000/2 дня</p>
+                                <p class="catalog-price">от ₽50 000 / 2 дня</p>
                             </div>
-                            <p class="catalog-text">Парижская романтика, круассаны и Эйфелева башня. Идеально для
-                                вдохновения</p>
+                            <p class="catalog-text">Парижская романтика, круассаны и Эйфелева башня. Идеально для вдохновения.</p>
                             <div class="catalog-footer">
-                                <div class="catalog-rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.tripadvisor.ru/Hotels-g187070-zff10-France-Hotels.html">
-
+                                <div class="catalog-rating">★★★★★</div>
+                                <a href="https://www.tripadvisor.ru/Hotels-g187070-zff10-France-Hotels.html" target="_blank">
                                     <button class="catalog-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -309,27 +256,21 @@
                     </div>
                 </div>
 
+                <!-- Вторая строка каталога -->
                 <div class="catalog-row">
                     <div class="catalog-card">
                         <div class="catalog-image">
-                            <img src="Images/Thailand.png" alt="Таиланд">
+                            <img src="images/Thailand.png" alt="Таиланд">
                         </div>
                         <div class="catalog-info">
                             <div class="catalog-header">
                                 <h3>Таиланд</h3>
-                                <p class="catalog-price">₽25 000/2 дня</p>
+                                <p class="catalog-price">от ₽25 000 / 2 дня</p>
                             </div>
-                            <p class="catalog-text">Пляжи Пукета, ночная жизнь Бангкока и древние храмы Чиангмая.
-                                Отличное сочетание природы и культуры</p>
+                            <p class="catalog-text">Пляжи Пхукета, ночная жизнь Бангкока и древние храмы Чиангмая.</p>
                             <div class="catalog-footer">
-                                <div class="catalog-rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.tripadvisor.com/Hotels-g293920-Phuket-Hotels.html">
+                                <div class="catalog-rating">★★★★★</div>
+                                <a href="https://www.tripadvisor.com/Hotels-g293920-Phuket-Hotels.html" target="_blank">
                                     <button class="catalog-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -338,23 +279,17 @@
 
                     <div class="catalog-card">
                         <div class="catalog-image">
-                            <img src="Images/DubaiUAE.png" alt="ОАЭ(Дубай)">
+                            <img src="images/DubaiUAE.png" alt="Дубай">
                         </div>
                         <div class="catalog-info">
                             <div class="catalog-header">
-                                <h3>ОАЭ(Дубай)</h3>
-                                <p class="catalog-price">₽60 000/2 дня</p>
+                                <h3>ОАЭ (Дубай)</h3>
+                                <p class="catalog-price">от ₽60 000 / 2 дня</p>
                             </div>
-                            <p class="catalog-text">Роскошь, небоскрёбы и пустынные сафари. Ультрасовременный отдых. Эксклюзивных шоппинг-центров</p>
+                            <p class="catalog-text">Роскошь, небоскрёбы и пустынные сафари. Ультрасовременный отдых.</p>
                             <div class="catalog-footer">
-                                <div class="catalog-rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.1001tur.ru/oae/tury/hot/dubay/days_short/">
+                                <div class="catalog-rating">★★★★★</div>
+                                <a href="https://www.1001tur.ru/oae/" target="_blank">
                                     <button class="catalog-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -363,24 +298,17 @@
 
                     <div class="catalog-card">
                         <div class="catalog-image">
-                            <img src="Images/Indonasia.png" alt="Индонезия">
+                            <img src="images/Indonasia.png" alt="Индонезия">
                         </div>
                         <div class="catalog-info">
                             <div class="catalog-header">
                                 <h3>Индонезия</h3>
-                                <p class="catalog-price">₽30 000/2 дня</p>
+                                <p class="catalog-price">от ₽30 000 / 2 дня</p>
                             </div>
-                            <p class="catalog-text">Йога, серфинг, водопады и зелёные рисовые поля. Идеальное место для
-                                перезагрузки</p>
+                            <p class="catalog-text">Йога, серфинг, водопады и зелёные рисовые поля. Идеальное место для перезагрузки.</p>
                             <div class="catalog-footer">
-                                <div class="catalog-rating">
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                    <span class="star">★</span>
-                                </div>
-                                <a href="https://www.tripadvisor.com/HotelsNear-g297704-d26664983-Indonasia-Bandung_West_Java_Java.html">
+                                <div class="catalog-rating">★★★★★</div>
+                                <a href="https://www.tripadvisor.com/Hotels-g297704-Bali-Hotels.html" target="_blank">
                                     <button class="catalog-btn">Подробнее</button>
                                 </a>
                             </div>
@@ -389,145 +317,113 @@
                 </div>
             </div>
         </section>
+
+        <!-- Блог -->
         <section id="blog">
             <div class="container">
-                <h2>Блог</h2>
-
+                <h2>Полезный блог</h2>
                 <div class="blog-grid">
                     <div class="blog-item">
                         <div class="blog-content">
-                            <h3>Чек-лист путешественника</h3>
-                            <p>Собираетесь в дорогу? Вот список вещей: паспорт, билеты, страховка, зарядки,
-                                универсальный адаптер, аптечка и лёгкая одежда по погоде. Не забудьте про копии
-                                документов — лучше перестраховаться!</p>
-                            <p>Планируйте заранее: ищите билеты за 1–2 месяца, выбирайте перелёты в середине недели,
-                                живите в хостелах или апартаментах. Используйте кэшбэк-сервисы и приложения для скидок.
-                                Иногда выгоднее пакетный тур, чем самостоятельная бронь.</p>
+                            <h3>Чек-лист путешественника: что взять в поездку</h3>
+                            <p>Паспорт, билеты, страховка, зарядки, универсальный адаптер, аптечка и подходящая одежда. Не забудьте копии документов!</p>
+                            <p>Ищите билеты заранее, используйте кэшбэк и приложения для скидок. Иногда выгоднее взять пакетный тур.</p>
                         </div>
                         <div class="blog-image">
-                            <img src="Images/checklist.jpg" alt="Чек-лист путешественника">
+                            <img src="images/checklist.jpg" alt="Чек-лист путешественника">
                         </div>
                     </div>
 
                     <div class="blog-item">
                         <div class="blog-content">
-                            <h3>Как выбрать страну для отпуска?</h3>
-                            <p>Подумайте, чего вы хотите: пляж, природа, городские прогулки или культурные
-                                достопримечательности? Учитывайте сезон, визовые требования, бюджет и безопасность. Для
-                                первого путешествия подойдут Турция, Таиланд, Италия или Грузия.</p>
-                            <p>Не перегружайте дни — лучше 2–3 места в день, чем 10 на бегу. Добавьте «резервный день»
-                                на случай усталости или плохой погоды. Используйте Google Maps, чтобы заранее прикинуть
-                                расстояния и время в пути.</p>
+                            <h3>Как правильно выбрать страну для отпуска?</h3>
+                            <p>Определите, чего вы хотите: пляжный отдых, природу, города или культуру. Учитывайте сезон, бюджет и визовые требования.</p>
+                            <p>Для первого путешествия отлично подойдут Турция, Таиланд, Италия или Грузия.</p>
                         </div>
                         <div class="blog-image">
-                            <img src="Images/Frame 27-2.png" alt="Выбор страны для отпуска">
+                            <img src="images/Frame 27-2.png" alt="Выбор страны">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Обратная связь -->
         <section id="feedback">
             <div class="container">
                 <div class="feedback-container">
                     <div class="feedback-form">
-                        <h2>Обратная связь</h2>
-                        <p>У вас есть вопросы, идеи или пожелания? Хотите поделиться своим опытом путешествия или
-                            посоветовать интересное место? Напишите нам — мы всегда рады общению!</p>
-
+                        <h2>Напишите нам</h2>
+                        <p>Есть вопросы, идеи или хотите поделиться своим путешествием? Мы всегда рады общению!</p>
                         <form action="#" method="POST">
                             <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Ваш имя" required>
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
                             </div>
-
                             <div class="form-group">
                                 <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
                             </div>
-
                             <div class="form-group">
-                                <textarea id="message" name="message" placeholder="Ваше сообщение" rows="4"
-                                    required></textarea>
+                                <textarea id="message" name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
                             </div>
-
-                            <button type="submit" class="submit-btn">Отправить</button>
+                            <button type="submit" class="submit-btn">Отправить сообщение</button>
                         </form>
-
                         <div class="decoration">
-                            <img src="Images/logo2.png" alt="Пальма">
+                            <img src="images/logo2.png" alt="Пальма">
                         </div>
                     </div>
-
                     <div class="feedback-image">
-                        <img src="Images/Frame 21.png" alt="Тропический берег">
+                        <img src="images/Frame 21.png" alt="Тропический берег">
                     </div>
                 </div>
             </div>
         </section>
-        <footer id="contacts">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-column">
-                        <h3>Меню</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Каталог</a></li>
-                            <li><a href="#">Услуги</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h3>Помощь</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Вопросы</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Главная</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h3>Контакты</h3>
-                        <ul class="contact-info">
-                            <li>
-                                <div class="contact-icon">
-                                    <img src="Images/email-icon.png" alt="Email">
-                                </div>
-                                <a href="mailto:mytravel123@mail.com">mytravel123@mail.com</a>
-                            </li>
-                            <li>
-                                <div class="contact-icon">
-                                    <img src="Images/phone-icon.png" alt="Телефон">
-                                </div>
-                                <a href="tel:+79876543210">+7 987 654 3210</a>
-                            </li>
-                            <li>
-                                <div class="contact-icon">
-                                    <img src="Images/instagram-icon.png" alt="Instagram">
-                                </div>
-                                <a href="https://instagram.com/MY_travel1" target="_blank">MY_travel1</a>
-                            </li>
-                            <li>
-                                <div class="contact-icon">
-                                    <img src="Images/telegram-icon.png" alt="Telegram">
-                                </div>
-                                <a href="https://t.me/mytravel11" target="_blank">@mytravel11</a>
-                            </li>
-                            <li>
-                                <div class="contact-icon">
-                                    <img src="Images/vk-icon.png" alt="VK">
-                                </div>
-                                <a href="https://vk.com/mytravel" target="_blank">My Travel</a>
-                            </li>
-                        </ul>
-                    </div>
+    </main>
+
+    <!-- Футер -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Меню</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                    </ul>
                 </div>
-                
-                <div class="copyright">
-                    <p>&copy; 2023 My Travel. Все права защищены.</p>
+                <div class="footer-column">
+                    <h3>Помощь</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <a href="mailto:mytravel123@mail.com">mytravel123@mail.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+79876543210">+7 987 654 32 10</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/MY_travel1" target="_blank">@MY_travel1</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/mytravel11" target="_blank">@mytravel11</a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/mytravel" target="_blank">My Travel</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </main>
+            <div class="copyright">
+                <p>&copy; 2026 My Travel. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
